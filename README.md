@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here's a simple README file for your Legal Document Classifier project:
 
-## Getting Started
+---
 
-First, run the development server:
+# Legal Document Classifier
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A web application designed to classify legal documents into specific categories using AI-powered content analysis.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project uses Next.js for the frontend, Vercel for hosting, and shadcn UI components for styling. It leverages OpenAI's GPT-4o model to classify documents as either Stock Purchase Agreements, Certificates of Incorporation, or Investors' Rights Agreements.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Document Upload**: Users can upload PDF or Word documents (.docx, .doc) for classification.
+- **AI Classification**: Documents are analyzed using OpenAI's GPT-4o model to determine their type.
+- **Confidence Indicator**: The system provides a confidence level for each classification, indicating how reliable the result is.
+- **Progress Tracking**: Users can track the progress of the document analysis process.
 
-To learn more about Next.js, take a look at the following resources:
+## Requirements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js (for development)
+- Next.js (for building and running the application)
+- Vercel (for hosting)
+- OpenAI API key (for AI functionality)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Setup
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/your-repo-url/impact-venture.git
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Set up an OpenAI API key and configure it in your environment variables.
+
+## Deployment
+
+This application is designed to be deployed on Vercel. Follow Vercel's documentation for setting up and deploying Next.js applications.
+
+## Contributing
+
+Contributions are welcome! Please submit pull requests with clear descriptions of changes.
+
+## License
+
+MIT
