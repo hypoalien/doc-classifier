@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
 
     // Extract text using office-text-extractor
     const extractor = getTextExtractor();
-    let documentText = await extractor.extractText({
+    const documentText = await extractor.extractText({
       input: buffer,
       type: "buffer",
     });

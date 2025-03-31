@@ -33,7 +33,7 @@ export function ClassificationResult({
           <CardTitle>Classification Complete</CardTitle>
         </div>
         <CardDescription>
-          We've analyzed your document and determined its type
+          We&apos;ve analyzed your document and determined its type
         </CardDescription>
       </CardHeader>
       <CardContent>
